@@ -9,11 +9,10 @@ const fun3 = () => {
 };
 function main(){
     console.log("main");
-    // setTimeout(fun1,0);
+    setTimeout(fun1,0);
     // setInterval(fun1,1000);
-    setImmediate(fun1);
-    fun2();
-    fun3();
+    setImmediate(fun2);
+    process.nextTick(fun3);
     console.log("end");
 }
 main();
