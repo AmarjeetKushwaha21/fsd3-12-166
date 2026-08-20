@@ -1,1 +1,18 @@
-[]
+[
+  {
+    "id": null,
+    "price": null,
+    "qty": null
+  },
+  {
+    "id": null,
+    "price": null,
+    "qty": null
+  },
+  {
+    "id": 123,
+    "name": "tab",
+    "price": 1230,
+    "qty": 1
+  }
+]
