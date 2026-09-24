@@ -1,8 +1,8 @@
 import http from "http";
-import {addUser, getUsers} from "./users.js";
+import {addUser,getUserById,updateUser,addUser,deleteUser,getAllUsers} from "./users.js";
 const server=http.createServer((req,res)=>{
     if((req.url==="/api/users"&& req.method==="GET")){
-        res.end(JSON.stringify(getUsers()));
+        res.end(JSON.stringify(getAllUsers()));
     }
 
     else if((req.url==="/api/users"&& req.method==="POST")){
@@ -20,12 +20,18 @@ const server=http.createServer((req,res)=>{
     }
 
     else if((req.url==="/api/users/1"&& req.method==="GET")){
+        const userId=NUMBER(req.url.split('/').pop())
+        const userfount=getUserById(userId);
+        if(!userfount){
+            res.end(JSON.stringify({msg: 'user not found'}));
+        }
+        else{
+            res.end(JSON.stringify(userfound);
+        }
 
         
-        
-        res.end(JSON.stringify({msg:"single user with id 1"}));
 
-
+        res.end(JSON.stringify({msg:`single user with id ${userId}`}));
 
 
     }
