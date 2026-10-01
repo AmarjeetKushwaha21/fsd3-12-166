@@ -7,3 +7,4 @@ const server=http.createServer((req,res)=>{
 server.listen(444,()=>{
     console.log("Server is running...");
 })
+// amazon.com
