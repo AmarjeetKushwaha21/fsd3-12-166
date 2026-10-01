@@ -19,6 +19,7 @@ const server=http.createServer((req,res)=>{
   else if(req.url==="/contact")
     res.end("<h1>Contact Us");
 else{
+  // student ccity
     res.statusCode=404;
     res.end(`
         <h1> Page not found</h1>
