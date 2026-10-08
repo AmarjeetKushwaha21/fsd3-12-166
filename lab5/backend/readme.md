@@ -43,4 +43,7 @@ app.get("/",(req,res)=>{
 
 app.listen(4444,()=> console.log("prg1 is runnit at 4444"));
 ```
+ - in express we can add any static hrml pages with the help of express static method
+ - express sport midel ware when we have to execute some funtions before server execution then we use midel ware 
+ - app.use alway use to aply midelware
 
