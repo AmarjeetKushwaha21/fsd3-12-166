@@ -5,10 +5,15 @@ const app=express();
 // return name, price ,image of all product
 app.get("/api/products",(req,res)=>{
 
-    let sortedProducts=products.map(({name,image,price,id})=>({name,image,price,id}));
-    res.status(200).json({count: sortedProducts.length,data:sortedProducts})
+//     let sortedProducts=products.map(({name,image,price,id})=>({name,image,price,id}));
+//     res.status(200).json({count: sortedProducts.length,data:sortedProducts})
 
-})
+// })
+let sortedProducts=products.map(({
+    discription,reviews,...rest
+})=>rest,);
+
+res.status(200).json({count: sortedProducts.length,data:sortedProducts})
 
 
  app.use((req,res)=>{
