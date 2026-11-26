@@ -15,3 +15,8 @@
 ### react component
 1. js funtion that must return html contents
 2. file must 
+### Rule 
+- App.jsx
+- any component 
+- must start with capital letter 
+- extension 
