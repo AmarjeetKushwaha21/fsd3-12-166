@@ -54,6 +54,8 @@ function App() {
       <Book {...bookData[1]} />
       <Book {...bookData[2]} /> */}
       <MyButton/>
+      <br/>
+      <MyButton/>
 
     </>
   );

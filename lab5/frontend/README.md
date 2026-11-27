@@ -20,3 +20,5 @@
 - any component 
 - must start with capital letter 
 - extension 
+## usestate 
+- the funtion can be use to update the vairiable vailue . it is a funtion that is avilable in react and it takes default vailue of vairiable 
